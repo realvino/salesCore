@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props">
+  </Import>
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
+    <AssemblyName>tibs.stem.Web.Core</AssemblyName>
+    <PackageId>tibs.stem.Web.Core</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>tibs.stem.Web</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Editions\**" />
+    <EmbeddedResource Remove="Editions\**" />
+    <None Remove="Editions\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tibs.stem.Application\tibs.stem.Application.csproj" />
+    <ProjectReference Include="..\tibs.stem.EntityFrameworkCore\tibs.stem.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.ZeroCore.IdentityServer4" Version="2.3.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="1.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="1.1.2" />
+    <PackageReference Include="NReco.PdfGenerator" Version="1.1.15" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.6.14" />
+    <PackageReference Include="PaulMiami.AspNetCore.Mvc.Recaptcha" Version="1.2.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.1" />
+    <PackageReference Include="Abp.AspNetCore" Version="2.3.0" />
+    <PackageReference Include="Abp.HangFire.AspNetCore" Version="2.3.0" />
+    <PackageReference Include="Abp.RedisCache" Version="2.3.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.2" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <PackageReference Include="Abp.Owin" Version="2.3.0" />
+    <PackageReference Include="Abp.Web.SignalR" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(TargetFramework)'=='net461'">
+    <DefineConstants>NET461;FEATURE_LDAP;FEATURE_SIGNALR</DefineConstants>
+  </PropertyGroup>
+</Project>

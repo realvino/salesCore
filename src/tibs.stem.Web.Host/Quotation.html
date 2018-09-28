@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotation</title>
+    <meta charset="utf-8" />
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        /*table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }*/
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            /*background-color: #0e2563;*/
+            background-color: #215967;
+            /*color: white;*/
+        }
+    </style>
+</head>
+<body style="font-family:Calibri Light">
+    <div style="text-align:right">
+        <img src=http://208.117.44.27:22741//TenantCustomization/GetLogo?id=476a3b93-8add-3099-85b1-39e8e94373be style="max-height:80px;max-width:360px;" />
+    </div><br /><br />
+
+    <table>
+        <tr>
+            <td style="text-align:left">Company</td>
+            <td style="text-align:left">{QutCompany}</td>
+            <td colspan="5" style="text-align:left">Date</td>
+            <td colspan="6" style="text-align:left">{QutDate}</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Attn:</td>
+            <td style="text-align:left">{QutContact}</td>
+            <td colspan="5" style="text-align:left">Proposal No</td>
+            <td colspan="6" style="text-align:left">{QutProposalNo}</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">E-mail:</td>
+            <td style="text-align:left">{QutCon_Mail}</td>
+            <td style="text-align:left" colspan="5">Ref</td>
+            <td style="text-align:left" colspan="6">{QutProjectRef}</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Tel:</td>
+            <td style="text-align:left">{QutCon_Phone}</td>
+            <td colspan="5" style="text-align:left">Sales Account:</td>
+            <td colspan="6" style="text-align:left">{QutSalesman}</td>
+        </tr>
+    </table>
+
+    <h3 style="background-color:#0D0D0D;text-align:center;color:#538DD5;margin-bottom: 0px;">{Title}</h3>
+    <table id="t01" style="page-break-after:auto;display:{{productdisplay}}">
+        <tr style="color:white;text-align:center">
+            <th style="width:4%">Sl No</th>
+            <th style="width:16%">Product Code</th>
+            <th style="width:50%">Product Description</th>
+            <th style="width:10%">Qty</th>
+            <th style="width:10%">Unit Price ({Conversion Code})</th>
+            <th style="width:10%">Extended Price ({Conversion Code})</th>
+        </tr>
+
+        {Product_Content}
+
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3" style="text-align:right">Product Total</td>
+            <td colspan="3" style="text-align:right"> {ProdTotal}</td>
+        </tr>
+        <tr></tr>
+    </table>
+     <table id="t01" style="page-break-after:auto;display:{{servicedisplay}}">
+        <tr style="color:white;text-align:center">
+            <th style="width:4%">Sl No</th>
+            <th style="width:16%">Secvice Code</th>
+            <th style="width:50%">Service Name</th>
+            <th style="width:30%">Price ({Conversion Code})</th>
+        </tr>
+
+        {Service_Content}
+
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3" style="text-align:right"> Service Total</td>
+            <td style="text-align:right"> {SerTotal}</td>
+        </tr>
+        <tr></tr>
+    </table>
+<br>
+    <table id="t01" style="page-break-after:auto">       
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td  style="text-align:right;width:70%">Net Amount</td>
+            <td  style="text-align:right"> {NetTotal}</td>
+        </tr>
+         <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td  style="text-align:right;width:70%">Discount Amount</td>
+            <td  style="text-align:right"> {DisTotal}</td>
+        </tr>
+         <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td  style="text-align:right;width:70%">Vat Amount</td>
+            <td  style="text-align:right"> {VatTotal}</td>
+        </tr>
+          <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td  style="text-align:right;width:70%">Total</td>
+            <td  style="text-align:right"> {Total}</td>
+        </tr>
+     </table>
+<br>
+    <table style="page-break-after:auto">
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td style="text-align:left">Freight</td>
+            <td style="text-align:left">{QutFreight}</td>
+            <td rowspan="6"><h3 style="text-align:center">Authorized Signatory</h3></td>
+        </tr>
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td style="text-align:left">Payment</td>
+            <td style="text-align:left">{QutPayment}</td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Packing</td>
+            <td style="text-align:left">{QutPacking}</td>
+        </tr>
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td style="text-align:left">Warranty</td>
+            <td style="text-align:left">{QutWarranty}</td>
+        </tr>
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td style="text-align:left">Validity</td>
+            <td style="text-align:left">{QutValidity}</td>
+        </tr>
+        <tr style="page-break-inside:avoid;page-break-after:auto;">
+            <td style="text-align:left">Delivery</td>
+            <td style="text-align:left">{QutDelivery}</td>
+        </tr>
+        <tr style="color:#868889;page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3"><h5 style="text-align:center;margin-bottom:0px;margin-top:0px;">The models numbers & the actual images of equipment's are subject to change without any prior approval by the manufacturer</h5></td>
+        </tr>
+        <tr style="color:#868889;page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3"><h5 style="text-align:center;margin-bottom:0px;margin-top:0px;">Park Road, Dubai</h5></td>
+        </tr>
+        <tr style="color:#868889;page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3"><h5 style="text-align:center;margin-bottom:0px;margin-top:0px;">Tele: 044-121212    &nbsp;&nbsp;&nbsp;    Mobile: + 91526728212 </h5></td>
+        </tr>
+        <tr style="color:#868889;page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3"><h5 style="text-align:center;margin-bottom:0px;margin-top:0px;">E-mail: salescastle@gmail.com   &nbsp;&nbsp;&nbsp;    URL: www.salescastle.com</h5></td>
+        </tr>
+        <tr style="color:#868889;page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3"><h6 style="text-align:center;margin-bottom:0px;margin-top:0px;">**** System Confidential ****</h6></td>
+        </tr>
+        <tr style="color:#2A2A6B;page-break-inside:avoid;page-break-after:auto;">
+            <td colspan="3"><h6 style="text-align:center;margin-bottom:0px;margin-top:0px;font-weight: 900;">*This is an automatic system generated quotation by the respective Key Account Manager of SalesCastle powered by TIBS  &reg;*</h6></td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <div style="text-align:center">
+        <img src={Image_Url1} style="max-height:80px;max-width:150px;" />
+    </div>
+
+</body>
+</html>
