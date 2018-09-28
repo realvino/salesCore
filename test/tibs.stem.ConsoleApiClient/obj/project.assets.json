@@ -7976,11 +7976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\test\\tibs.stem.ConsoleApiClient\\tibs.stem.ConsoleApiClient.csproj",
+      "projectUniqueName": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\test\\tibs.stem.ConsoleApiClient\\tibs.stem.ConsoleApiClient.csproj",
       "projectName": "tibs.stem.ConsoleApiClient",
-      "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\test\\tibs.stem.ConsoleApiClient\\tibs.stem.ConsoleApiClient.csproj",
+      "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\test\\tibs.stem.ConsoleApiClient\\tibs.stem.ConsoleApiClient.csproj",
       "packagesPath": "C:\\Users\\Vinoth\\.nuget\\packages\\",
-      "outputPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\test\\tibs.stem.ConsoleApiClient\\obj\\",
+      "outputPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\test\\tibs.stem.ConsoleApiClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7999,8 +7999,8 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj": {
-              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj"
+            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj": {
+              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj"
             }
           }
         }

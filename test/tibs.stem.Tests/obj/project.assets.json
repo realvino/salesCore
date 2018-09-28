@@ -6671,11 +6671,11 @@
   "project": {
     "version": "4.1.0",
     "restore": {
-      "projectUniqueName": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\test\\tibs.stem.Tests\\tibs.stem.Tests.csproj",
+      "projectUniqueName": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\test\\tibs.stem.Tests\\tibs.stem.Tests.csproj",
       "projectName": "tibs.stem.Tests",
-      "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\test\\tibs.stem.Tests\\tibs.stem.Tests.csproj",
+      "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\test\\tibs.stem.Tests\\tibs.stem.Tests.csproj",
       "packagesPath": "C:\\Users\\Vinoth\\.nuget\\packages\\",
-      "outputPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\test\\tibs.stem.Tests\\obj\\",
+      "outputPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\test\\tibs.stem.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6694,11 +6694,11 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj": {
-              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj"
+            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj": {
+              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Application\\tibs.stem.Application.csproj"
             },
-            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj": {
-              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj"
+            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj": {
+              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj"
             }
           }
         }

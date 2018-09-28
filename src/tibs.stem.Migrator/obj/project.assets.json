@@ -7938,11 +7938,11 @@
   "project": {
     "version": "4.1.0",
     "restore": {
-      "projectUniqueName": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Migrator\\tibs.stem.Migrator.csproj",
+      "projectUniqueName": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Migrator\\tibs.stem.Migrator.csproj",
       "projectName": "tibs.stem.Migrator",
-      "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Migrator\\tibs.stem.Migrator.csproj",
+      "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Migrator\\tibs.stem.Migrator.csproj",
       "packagesPath": "C:\\Users\\Vinoth\\.nuget\\packages\\",
-      "outputPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.Migrator\\obj\\",
+      "outputPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.Migrator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7961,8 +7961,8 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj": {
-              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj"
+            "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj": {
+              "projectPath": "E:\\SalesCastle\\SalesCastle Jan 05\\SC-Core 2\\salesCore\\salesCore\\src\\tibs.stem.EntityFrameworkCore\\tibs.stem.EntityFrameworkCore.csproj"
             }
           }
         }
