@@ -18,6 +18,8 @@ namespace tibs.stem
 
         public string ProductSubGroupFilePath { get; set; }
         public string ProfilePath { get; set; }
+        public string LogoPath { get; set; }
+
 
     }
 }

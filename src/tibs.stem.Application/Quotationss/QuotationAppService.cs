@@ -227,7 +227,7 @@ namespace tibs.stem.Quotationss
                         SalesOrderNumber = a.SalesOrderNumber,
                         LostDate = a.LostDate,
                         OverallDiscount = a.OverallDiscount,
-                        OverallDiscountinUSD = a.OverallDiscount / a.ExchangeRate,
+                        OverallDiscountinUSD = a.OverallDiscountinUSD,
                         CustomerPONumber = a.CustomerPONumber,
                         ExchangeRate = a.ExchangeRate,
                         EnquiryId = a.EnquiryId,
@@ -307,7 +307,8 @@ namespace tibs.stem.Quotationss
             {
                 var DefaultVatPercentage = _TenantVatAmountRepository.GetAll().Where(p => p.TenantId == _session.TenantId).FirstOrDefault();
                 input.Vat = true;
-                if(DefaultVatPercentage != null)
+               
+                if (DefaultVatPercentage != null)
                 {
                     input.VatPercentage = DefaultVatPercentage.VatAmount;
                 }
@@ -352,6 +353,7 @@ namespace tibs.stem.Quotationss
                     input.PaymentId = _QpaymentRepository.GetAll().Select(o => o.Id).DefaultIfEmpty().First();
                     input.DeliveryId = _DeliveryRepository.GetAll().Select(o => o.Id).DefaultIfEmpty().First();
                     var quotation = input.MapTo<Quotation>();
+
                     var val3 = _QuotationRepository
                      .GetAll().Where(p => p.SubjectName == input.SubjectName).FirstOrDefault();
 
@@ -373,6 +375,8 @@ namespace tibs.stem.Quotationss
                                 quotation.ProposalNumber = "Q" + date + _session.TenantId + val.ToString("000") + "-R0";
                                 val2 = _QuotationRepository.GetAll().Where(p => p.ProposalNumber == quotation.ProposalNumber).Count();
                             }
+                            quotation.Date = (from r in _QuotationRepository.GetAll() where r.Id == sd select r.CreationTime).FirstOrDefault();
+                            quotation.Revised = false;
                             await _QuotationRepository.UpdateAsync(quotation);
                         }
                         catch (Exception ex)
@@ -395,117 +399,30 @@ namespace tibs.stem.Quotationss
                 return sd;
             }
         }
-        public async Task <int> UpdateQuotation(CreateQuotationInput input)
+
+        public async Task<int> QuotationRevision(int QuotationId)
         {
             using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
             {
-                decimal exchangerate = 1;
-
-                int tenantid = (int)_session.TenantId;
-
-                if (input.CurrencyId != null)
+                int NewQuotationId = 0;
+                ConnectionAppService db = new ConnectionAppService();
+                DataTable ds = new DataTable();
+                using (SqlConnection con = new SqlConnection(db.ConnectionString()))
                 {
-                    var currency = _CustomCurrencyRepository.GetAll().Where(p => p.CurrencyId == input.CurrencyId && p.TenantId == tenantid).FirstOrDefault();
-                    if (currency == null)
+                    SqlCommand sqlComm = new SqlCommand("Sp_QuotationRevision", con);
+                    sqlComm.Parameters.AddWithValue("@QuotationId", QuotationId);
+                    sqlComm.CommandType = CommandType.StoredProcedure;
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlComm))
                     {
-                        exchangerate = _CurrencyRepository.GetAll().Where(p => p.Id == input.CurrencyId).Select(p => p.ConversionRatio).FirstOrDefault();
+                        da.Fill(ds);
                     }
-                    else
-                    {
-                        exchangerate = currency.ConversionRatio;
-                    }
+                    var RQuotationId = ds.Rows[0]["Id"].ToString();
+                    NewQuotationId = int.Parse(RQuotationId);
                 }
-
-                if (input.EnquiryId > 0 && (input.MileStoneId == 0 || input.MileStoneId == null))
-                {
-                    var enquiryMile = (from r in _EnquiryRepository.GetAll().Where(p => p.Id == input.EnquiryId) select r.MileStoneId).FirstOrDefault();
-                    input.MileStoneId = enquiryMile;
-                }
-
-                input.ExchangeRate = exchangerate;
-                var val = _QuotationRepository
-                 .GetAll().Where(p => (p.SubjectName == input.SubjectName) && p.Id != input.Id).FirstOrDefault();
-
-                var oldquotation = _QuotationRepository.GetAll().AsNoTracking().Where(u => u.Id == input.Id).FirstOrDefault();
-
-                if (oldquotation.Vat == true && input.Vat == false)
-                {
-                    input.VatAmount = 0;
-                }
-                else if (oldquotation.Vat == false && input.Vat == true)
-                {
-                    if(input.OverallDiscount > 0)
-                    {
-                        input.VatAmount = ((input.Total - input.OverallDiscount) * input.VatPercentage) / 100;
-                    }else
-                    {
-                        input.VatAmount = (input.Total * input.VatPercentage) / 100;
-                    }
-                }
-
-                if (oldquotation.Submitted == false && input.Submitted == true)
-                {
-                    var SubMilestone = (from r in _QuotationStatusRepository.GetAll().Where(p => p.Submitted == true) select r.MileStoneId).FirstOrDefault();
-                    if (SubMilestone != null)
-                    {
-                        input.MileStoneId = SubMilestone;
-                    }
-                    input.SubmittedDate = DateTime.Now;
-                }
-                else if (input.Submitted == false)
-                {
-                    input.SubmittedDate = null;
-                }
-
-                if (oldquotation.Won == false && input.Won == true)
-                {
-                    var WonMilestone = (from r in _QuotationStatusRepository.GetAll().Where(p => p.Won == true) select r.MileStoneId).FirstOrDefault();
-                    if (WonMilestone != null)
-                    {
-                        input.MileStoneId = WonMilestone;
-                    }
-                    input.WonDate = DateTime.Now;
-                }
-                else if (input.Won == false)
-                    input.WonDate = null;
-
-                if (oldquotation.Lost == false && input.Lost == true)
-                {
-                    var LostMilestone = (from r in _QuotationStatusRepository.GetAll().Where(p => p.Lost == true) select r.MileStoneId).FirstOrDefault();
-                    if (LostMilestone != null)
-                    {
-                        input.MileStoneId = LostMilestone;
-                    }
-                    input.LostDate = DateTime.Now;
-                }
-                else if (input.Lost == false)
-                    input.LostDate = null;
-
-
-                //quotation.Total = (from p in _QuotationProductRepository.GetAll() where p.QuotationId == input.Id select p.EstimatedPrice).Sum();
-                var quotation = input.MapTo<Quotation>();
-
-                if (val == null)
-                {
-                
-                        int Sid = _QuotationStatusRepository.GetAll().Where(o => o.QuotationStatusName == "New").Select(o => o.Id).DefaultIfEmpty().First();
-                        if(input.StatusId != Sid && input.Total < 1)
-                        {
-                            throw new UserFriendlyException("Ooops!", "Invalid Update...");
-                        }
-                        else
-                        {
-                            await _QuotationRepository.UpdateAsync(quotation);
-                        }
-
-                }
-                else
-                {
-                    throw new UserFriendlyException("Ooops!", "Duplicate Data Occured...");
-                }
-                return input.Id;
+                return NewQuotationId;
             }
         }
+
         [AbpAuthorize(AppPermissions.Pages_Tenant_Quotation_Quotations_Delete)]
         public async Task DeleteQuotation(EntityDto input)
         {
@@ -1293,6 +1210,123 @@ namespace tibs.stem.Quotationss
             return data;
         }
 
+        public async Task<int> UpdateQuotation(CreateQuotationInput input)
+        {
+            using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
+            {
+                decimal exchangerate = 1;
+
+                int tenantid = (int)_session.TenantId;
+
+                if (input.CurrencyId != null)
+                {
+                    var currency = _CustomCurrencyRepository.GetAll().Where(p => p.CurrencyId == input.CurrencyId && p.TenantId == tenantid).FirstOrDefault();
+                    if (currency == null)
+                    {
+                        exchangerate = _CurrencyRepository.GetAll().Where(p => p.Id == input.CurrencyId).Select(p => p.ConversionRatio).FirstOrDefault();
+                    }
+                    else
+                    {
+                        exchangerate = currency.ConversionRatio;
+                    }
+                }
+
+                if (input.EnquiryId > 0 && (input.MileStoneId == 0 || input.MileStoneId == null))
+                {
+                    var enquiryMile = (from r in _EnquiryRepository.GetAll().Where(p => p.Id == input.EnquiryId) select r.MileStoneId).FirstOrDefault();
+                    input.MileStoneId = enquiryMile;
+                }
+
+                input.ExchangeRate = exchangerate;
+                var val = _QuotationRepository
+                 .GetAll().Where(p => (p.SubjectName == input.SubjectName && p.Revised == false) && p.Id != input.Id).FirstOrDefault();
+
+                var oldquotation = _QuotationRepository.GetAll().AsNoTracking().Where(u => u.Id == input.Id).FirstOrDefault();
+
+                if (oldquotation.Vat == true && input.Vat == false)
+                {
+                    input.VatAmount = 0;
+                }
+                else if (oldquotation.Vat == false && input.Vat == true)
+                {
+                    if (input.OverallDiscount > 0)
+                    {
+                        input.VatAmount = ((input.Total - input.OverallDiscount) * input.VatPercentage) / 100;
+                    }
+                    else
+                    {
+                        input.VatAmount = (input.Total * input.VatPercentage) / 100;
+                    }
+                }
+                if (oldquotation.StatusId != input.StatusId)
+                {
+                    var CQuotationStatus = _QuotationStatusRepository.GetAll().Where(p => p.Id == input.StatusId).FirstOrDefault();
+
+                    if (CQuotationStatus.Submitted == true)
+                    {
+                        input.Submitted = true;
+                        input.MileStoneId = CQuotationStatus.MileStoneId != null ? CQuotationStatus.MileStoneId : input.MileStoneId;
+                        input.SubmittedDate = DateTime.Now;
+                    }
+                    else if (CQuotationStatus.Won == true)
+                    {
+                        input.Won = true;
+                        input.MileStoneId = CQuotationStatus.MileStoneId != null ? CQuotationStatus.MileStoneId : input.MileStoneId;
+                        input.WonDate = DateTime.Now;
+                    }
+                    else if (CQuotationStatus.Lost == true)
+                    {
+                        input.Lost = true;
+                        input.MileStoneId = CQuotationStatus.MileStoneId != null ? CQuotationStatus.MileStoneId : input.MileStoneId;
+                        input.LostDate = DateTime.Now;
+                    }
+                    else if (CQuotationStatus.Revised == true)
+                    {
+                        input.Revised = true;
+                        input.MileStoneId = CQuotationStatus.MileStoneId != null ? CQuotationStatus.MileStoneId : input.MileStoneId;
+                    }
+                }
+
+                if (input.OverallDiscount > 0)
+                {
+                    input.OverallDiscountinUSD = Math.Round((input.OverallDiscount / input.ExchangeRate), 3);
+                    input.OverallDiscount = Math.Round((input.OverallDiscountinUSD * input.ExchangeRate), 2);
+                }
+                else
+                {
+                    input.OverallDiscountinUSD = 0;
+                }
+
+                var quotation = input.MapTo<Quotation>();
+
+                if (val == null)
+                {
+
+                    int Sid = _QuotationStatusRepository.GetAll().Where(o => o.QuotationStatusName == "New").Select(o => o.Id).DefaultIfEmpty().First();
+                    if (input.StatusId != Sid && input.Total < 1)
+                    {
+                        throw new UserFriendlyException("Ooops!", "Invalid Update...");
+                    }
+                    else
+                    {
+                        if (input.Revised == true && oldquotation.Revised == false)
+                        {
+                            input.Id = await QuotationRevision(input.Id);
+                        }
+                        else
+                        {
+                            await _QuotationRepository.UpdateAsync(quotation);
+                        }
+                    }
+
+                }
+                else
+                {
+                    throw new UserFriendlyException("Ooops!", "Duplicate Data Occured...");
+                }
+                return input.Id;
+            }
+        }
     }
     public class UpdateQuotationTotal
     {

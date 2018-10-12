@@ -751,8 +751,173 @@ namespace tibs.stem.Report
             }
 
         }
+        public async Task<PagedResultDto<FilterListOutput>> GetFilterReport(GetFilterReportInput input)
+        {
+            int TenantId = (int)(_session.TenantId);
+            using (_unitOfWorkManager.Current.SetTenantId(TenantId))
+            {
+                try
+                {
+                    ConnectionAppService db = new ConnectionAppService();
+                    DataTable dt = new DataTable();
+                    SqlConnection con3 = new SqlConnection(db.ConnectionString());
+                    SqlCommand sqlComm = new SqlCommand("Sp_ReportFilterView", con3);
+                    sqlComm.Parameters.AddWithValue("@TenantId", TenantId);
+                    sqlComm.Parameters.AddWithValue("@ReportTypeId", input.ReportTypeId);
+                    sqlComm.Parameters.AddWithValue("@ReportViewId", input.ReportViewId);
+                    sqlComm.Parameters.AddWithValue("@Salesperson", input.Salesperson);
+                    sqlComm.Parameters.AddWithValue("@Creator", input.Creator);
+                    sqlComm.Parameters.AddWithValue("@Country", input.Country);
+                    sqlComm.Parameters.AddWithValue("@Currency", input.Currency);
+                    sqlComm.Parameters.AddWithValue("@CustomerType", input.CustomerType);
+                    sqlComm.Parameters.AddWithValue("@MileStone", input.MileStone);
+                    sqlComm.Parameters.AddWithValue("@MileStoneStatus", input.MileStoneStatus);
+                    sqlComm.Parameters.AddWithValue("@QuotationStatus", input.QuotationStatus);
+                    sqlComm.Parameters.AddWithValue("@EnquiryCreationTime", input.EnquiryCreationTime);
+                    sqlComm.Parameters.AddWithValue("@EnquiryCreationTimeId", input.EnquiryCreationTimeId);
+                    sqlComm.Parameters.AddWithValue("@QuotationCreationTime", input.QuotationCreationTime);
+                    sqlComm.Parameters.AddWithValue("@QuotationCreationTimeId", input.QuotationCreationTimeId);
+                    sqlComm.Parameters.AddWithValue("@SubmittedDate", input.SubmittedDate);
+                    sqlComm.Parameters.AddWithValue("@SubmittedDateId", input.SubmittedDateId);
+                    sqlComm.Parameters.AddWithValue("@WonDate", input.WonDate);
+                    sqlComm.Parameters.AddWithValue("@WonDateId", input.WonDateId);
+                    sqlComm.Parameters.AddWithValue("@LostDate", input.LostDate);
+                    sqlComm.Parameters.AddWithValue("@LostDateId", input.LostDateId);
 
-    public class ReportColumn
+                    sqlComm.CommandType = CommandType.StoredProcedure;
+                    using (SqlDataAdapter sda = new SqlDataAdapter(sqlComm))
+                    {
+                        sda.Fill(dt);
+                    }
+
+                    var FilterReport = (from DataRow dr in dt.Rows
+                                        select new FilterListOutput
+                                        {
+                                            CompanyId = Convert.ToInt32(dr["CompanyId"]),
+                                            Company = Convert.ToString(dr["CompanyName"]),
+                                            Salesperson = Convert.ToString(dr["Salesperson"]),
+                                            Creator = Convert.ToString(dr["Creator"]),
+                                            CreationTime = Convert.ToDateTime(dr["CreationTime"]),
+                                            Country = Convert.ToString(dr["CountryName"]),
+                                            Currency = Convert.ToString(dr["CurrencyName"]),
+                                            CustomerType = Convert.ToString(dr["CustomerType"]),
+                                            EnquiryCount = Convert.ToInt32(dr["EnquiryCount"]),
+                                            QuotationCount = Convert.ToInt32(dr["QuotationCount"]),
+                                            ContactId = Convert.ToInt32(dr["ContactId"]),
+                                            Contact = Convert.ToString(dr["ContactName"]),
+                                            TitleName = Convert.ToString(dr["TitleName"]),
+                                            QuotationId = Convert.ToInt32(dr["QuotationId"]),
+                                            EnquiryId = Convert.ToInt32(dr["Id"]),
+                                            EnquiryTitle = Convert.ToString(dr["EnquiryTitle"]),
+                                            EnquiryNo = Convert.ToString(dr["EnquiryNo"]),
+                                            MileStones = Convert.ToString(dr["MileStoneName"]),
+                                            MileStoneStatus = Convert.ToString(dr["MileStoneStatusName"]),
+                                            EnquiryClosureDate = Convert.ToDateTime(dr["CloseDate"]),
+                                            SubjectName = Convert.ToString(dr["SubjectName"]),
+                                            QRefno = Convert.ToString(dr["QRefno"]),
+                                            StatusName = Convert.ToString(dr["QuotationStatusName"]),
+                                            Total = Convert.ToDecimal(dr["Total"]),
+                                            SubmittedDate = Convert.ToDateTime(dr["SubmittedDate"]),
+                                            WonDate = Convert.ToDateTime(dr["WonDate"]),
+                                            LostDate = Convert.ToDateTime(dr["LostDate"]),
+                                            Remarks = Convert.ToString(dr["Remarks"])
+                                        });
+
+                    var FilterReportCount = FilterReport.Count();
+
+                    var FilterReportLists = FilterReport.OrderByDescending(p => p.CreationTime).Skip(input.SkipCount).Take(input.MaxResultCount).ToList();
+
+                    var ReportOutput = FilterReportLists.MapTo<List<FilterListOutput>>();
+
+                    return new PagedResultDto<FilterListOutput>(FilterReportCount, ReportOutput);
+
+                }
+                catch (Exception EX)
+                {
+                    throw EX;
+                }
+
+            }
+        }
+        public async Task<Array> GetEnquiryReportColumn()
+        {
+            List<ReportColumn> EnquiryReportColumn = new List<ReportColumn>()
+            {
+                new ReportColumn(){ ColumnId=1, ColumnName="Enquiry Title", Active=true},
+                new ReportColumn(){ ColumnId=2, ColumnName="Enquiry No", Active=true},
+                new ReportColumn(){ ColumnId=3, ColumnName="MileStone", Active=true},
+                new ReportColumn(){ ColumnId=4, ColumnName="MileStone Status", Active=true},
+                new ReportColumn(){ ColumnId=5, ColumnName="Salesperson", Active=true},
+                new ReportColumn(){ ColumnId=6, ColumnName="Company", Active=true},
+                new ReportColumn(){ ColumnId=7, ColumnName="Contact", Active=true},
+                new ReportColumn(){ ColumnId=8, ColumnName="Closure Date", Active=true},
+                new ReportColumn(){ ColumnId=9, ColumnName="Total", Active=true},
+                new ReportColumn(){ ColumnId=10, ColumnName="Remarks", Active=true},
+                new ReportColumn(){ ColumnId=11, ColumnName="Created By", Active=true},
+                new ReportColumn(){ ColumnId=12, ColumnName="Creation Time", Active=true}
+            };
+
+            return EnquiryReportColumn.ToArray();
+        }
+        public async Task<Array> GetQuotationReportColumn()
+        {
+            List<ReportColumn> EnquiryReportColumn = new List<ReportColumn>()
+            {
+                new ReportColumn(){ ColumnId=1, ColumnName="Subject", Active=true},
+                new ReportColumn(){ ColumnId=2, ColumnName="Ref No", Active=true},
+                new ReportColumn(){ ColumnId=3, ColumnName="Enquiry Title", Active=true},
+                new ReportColumn(){ ColumnId=4, ColumnName="Enquiry No", Active=true},
+                new ReportColumn(){ ColumnId=5, ColumnName="MileStone", Active=true},
+                new ReportColumn(){ ColumnId=6, ColumnName="MileStone Status", Active=true},
+                new ReportColumn(){ ColumnId=7, ColumnName="Salesperson", Active=true},
+                new ReportColumn(){ ColumnId=8, ColumnName="Company", Active=true},
+                new ReportColumn(){ ColumnId=9, ColumnName="Contact", Active=true},
+                new ReportColumn(){ ColumnId=10, ColumnName="Quotation Status", Active=true},
+                new ReportColumn(){ ColumnId=11, ColumnName="Submitted Date", Active=true},
+                new ReportColumn(){ ColumnId=12, ColumnName="Won Date", Active=true},
+                new ReportColumn(){ ColumnId=13, ColumnName="Lost Date", Active=true},
+                new ReportColumn(){ ColumnId=14, ColumnName="Closure Date", Active=true},
+                new ReportColumn(){ ColumnId=15, ColumnName="Total", Active=true},
+                new ReportColumn(){ ColumnId=16, ColumnName="Created By", Active=true},
+                new ReportColumn(){ ColumnId=17, ColumnName="Creation Time", Active=true}
+            };
+
+            return EnquiryReportColumn.ToArray();
+        }
+        public async Task<Array> GetCompanyReportColumn()
+        {
+            List<ReportColumn> CompanyReportColumn = new List<ReportColumn>()
+            {
+                new ReportColumn(){ ColumnId=1, ColumnName="Company", Active=true},
+                new ReportColumn(){ ColumnId=2, ColumnName="Salesperson", Active=true},
+                new ReportColumn(){ ColumnId=3, ColumnName="Country", Active=true},
+                new ReportColumn(){ ColumnId=4, ColumnName="Currency", Active=true},
+                new ReportColumn(){ ColumnId=5, ColumnName="Customer Type", Active=true},
+                new ReportColumn(){ ColumnId=6, ColumnName="Enquiry Count", Active=true},
+                new ReportColumn(){ ColumnId=7, ColumnName="Quotation Count", Active=true},
+                new ReportColumn(){ ColumnId=8, ColumnName="Created By", Active=true},
+                new ReportColumn(){ ColumnId=9, ColumnName="Creation Time", Active=true}
+            };
+
+            return CompanyReportColumn.ToArray();
+        }
+        public async Task<Array> GetContactReportColumn()
+        {
+            List<ReportColumn> ContactReportColumn = new List<ReportColumn>()
+            {
+                new ReportColumn(){ ColumnId=1, ColumnName="Title", Active=true},
+                new ReportColumn(){ ColumnId=2, ColumnName="Name", Active=true},
+                new ReportColumn(){ ColumnId=3, ColumnName="Company", Active=true},
+                new ReportColumn(){ ColumnId=4, ColumnName="Salesperson", Active=true},
+                new ReportColumn(){ ColumnId=5, ColumnName="Customer Type", Active=true},
+                new ReportColumn(){ ColumnId=6, ColumnName="Created By", Active=true},
+                new ReportColumn(){ ColumnId=7, ColumnName="Creation Time", Active=true}
+            };
+
+            return ContactReportColumn.ToArray();
+        }
+
+        public class ReportColumn
         {
             public int ColumnId { get; set; }
             public string ColumnName { get; set; }

@@ -120,6 +120,8 @@ namespace tibs.stem.Web
             appFolders.ProductSubGroupFilePath = Path.Combine(_env.WebRootPath, @"Common\Images\ProductSubGroup");
             appFolders.FindFilePath = Path.Combine(_env.WebRootPath, @"");
             appFolders.ProfilePath = Path.Combine(_env.WebRootPath, @"Common\Profile");
+            appFolders.LogoPath = Path.Combine(_env.WebRootPath, @"Common\Logo");
+
 
 #if NET461
             if (_env.IsDevelopment())

@@ -35,6 +35,7 @@ using tibs.stem.Quotations;
 using tibs.stem.QuotationServices;
 using tibs.stem.QuotationStatuss;
 using tibs.stem.Reasonss;
+using tibs.stem.Reports;
 using tibs.stem.Services;
 using tibs.stem.Storage;
 using tibs.stem.Targetss;
@@ -139,6 +140,7 @@ namespace tibs.stem.EntityFrameworkCore
         public virtual DbSet<PaymentSchedule> PaymentScheduless { get; set; }
         public virtual DbSet<PaymentCollection> PaymentCollectionss { get; set; }
         public virtual DbSet<TenantVatAmountSetting> TenantVatAmountSettingss { get; set; }
+        public virtual DbSet<ReportGenerator> ReportGenerators { get; set; }
 
         public stemDbContext(DbContextOptions<stemDbContext> options)
             : base(options)

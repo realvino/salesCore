@@ -20,6 +20,7 @@ using tibs.stem.Authorization.Users.Profile.Cache;
 using tibs.stem.Authorization.Users.Profile.Dto;
 using tibs.stem.Friendships;
 using tibs.stem.Identity;
+using tibs.stem.IO;
 using tibs.stem.Security;
 using tibs.stem.Storage;
 using tibs.stem.Timing;
@@ -324,6 +325,36 @@ namespace tibs.stem.Authorization.Users.Profile
             }
 
             return new GetProfilePictureOutput(Convert.ToBase64String(bytes));
+        }
+
+        public async Task UpdateLogo()
+        {
+            int TenantId = (int)AbpSession.TenantId;
+            var data = await TenantManager.GetByIdAsync(TenantId);
+            if (data.LogoId != null)
+            {
+                try
+                {
+                    var files = await _binaryObjectManager.GetOrNullAsync((Guid)data.LogoId);
+                    byte[] bytes = new byte[0];
+                    bytes = files.Bytes;
+                    var tempFileName = "LogoImage_" + data.Id + ".jpg";
+                    if (!Directory.Exists(_appFolders.LogoPath))
+                    {
+                        Directory.CreateDirectory(_appFolders.LogoPath);
+                    }
+                    AppFileHelper.DeleteFilesInFolderIfExists(_appFolders.LogoPath, tempFileName);
+
+                    var tempFilePath = Path.Combine(_appFolders.LogoPath, tempFileName);
+
+                    System.IO.File.WriteAllBytes(tempFilePath, bytes);
+
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
         }
     }
 }

@@ -172,7 +172,9 @@ namespace tibs.stem.Web.Controllers
                 EncryptedAccessToken = GetEncrpyedAccessToken(accessToken),
                 ExpireInSeconds = (int)_configuration.Expiration.TotalSeconds,
                 TwoFactorRememberClientToken = twoFactorRememberClientToken,
-                ReturnUrl = returnUrl
+                ReturnUrl = returnUrl,
+                RootId = loginResult.User.RootId,
+                UserId = loginResult.User.Id
             };
         }
 

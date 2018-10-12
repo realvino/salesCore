@@ -21,6 +21,7 @@ namespace tibs.stem.Web.Controllers
         private readonly IAppFolders _appFolders;
         stemDbContext _stemDbContext;
         private readonly IHostingEnvironment _hostingEnvironment;
+        public static IConfigurationRoot Configuration { get; set; }
         public PdfControllerBase(IAppFolders appFolders, stemDbContext stemDbContext, IHostingEnvironment hostingEnvironment)
         {
            _hostingEnvironment = hostingEnvironment;
@@ -231,6 +232,23 @@ namespace tibs.stem.Web.Controllers
             body = body.Replace("{QutConversionCode}", currencycode);
             body = body.Replace("{Conversion Code}", currencycode);
             //return body;
+
+            var rootpath = new ConfigurationBuilder()
+                        .SetBasePath(Directory.GetCurrentDirectory())
+                        .AddJsonFile("appsettings.json");
+
+            Configuration = rootpath.Build();
+            var TenantLogoImage = (from r in _stemDbContext.Tenants where r.Id == quotation.TenantId select r.LogoId).FirstOrDefault();
+            if (TenantLogoImage != null)
+            {
+                var root = Configuration["App:ServerRootAddress"];
+                body = body.Replace("{Image_Url}", root + "/Common/Logo/LogoImage_" + quotation.TenantId + ".jpg");
+            }
+            else
+            {
+                body = body.Replace("{Image_Url}", "");
+            }
+
 
             string QuotationPath = _hostingEnvironment.WebRootPath + "\\Common\\QuotationPDF\\";
             //string QuotationPath = @"C:\Salescastle\QuotationPDF\";

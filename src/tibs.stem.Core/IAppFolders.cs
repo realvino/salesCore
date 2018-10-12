@@ -16,6 +16,8 @@
 
         string ProductSubGroupFilePath { get; set; }
         string ProfilePath { get; set; }
+        string LogoPath { get; set; }
+
 
     }
 }

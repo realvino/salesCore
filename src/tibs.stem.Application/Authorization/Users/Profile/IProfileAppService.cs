@@ -31,5 +31,6 @@ namespace tibs.stem.Authorization.Users.Profile
         Task SendVerificationSms();
 
         Task VerifySmsCode(VerifySmsCodeInputDto input);
+        Task UpdateLogo();
     }
 }

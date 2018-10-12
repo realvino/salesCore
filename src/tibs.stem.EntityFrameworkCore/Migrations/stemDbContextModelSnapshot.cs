@@ -2397,6 +2397,74 @@ namespace tibs.stem.Migrations
                     b.ToTable("Reason");
                 });
 
+            modelBuilder.Entity("tibs.stem.Reports.ReportGenerator", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Country");
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<string>("Creator");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<string>("Currency");
+
+                    b.Property<string>("CustomerType");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<DateTime>("EnquiryCreationTime");
+
+                    b.Property<int>("EnquiryCreationTypeId");
+
+                    b.Property<string>("HiddenColumns");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<DateTime>("LostDate");
+
+                    b.Property<int>("LostDateId");
+
+                    b.Property<string>("MileStone");
+
+                    b.Property<string>("MileStoneStatus");
+
+                    b.Property<string>("Name");
+
+                    b.Property<DateTime>("QuotationCreationTime");
+
+                    b.Property<int>("QuotationCreationTypeId");
+
+                    b.Property<string>("QuotationStatus");
+
+                    b.Property<int>("ReportTypeId");
+
+                    b.Property<string>("Salesperson");
+
+                    b.Property<DateTime>("SubmitttedDate");
+
+                    b.Property<int>("SubmitttedDateId");
+
+                    b.Property<int>("TenantId");
+
+                    b.Property<DateTime>("WonDate");
+
+                    b.Property<int>("WonDateId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ReportGenerator");
+                });
+
             modelBuilder.Entity("tibs.stem.Services.Service", b =>
                 {
                     b.Property<int>("Id")

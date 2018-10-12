@@ -23,6 +23,10 @@ namespace tibs.stem.Report
         Task<FileDto> GetWonReportToExcel();
         Task<FileDto> GetLostReportToExcel();
         Task CreateReport(ReportGeneratorInput input);
-
+        Task<PagedResultDto<FilterListOutput>> GetFilterReport(GetFilterReportInput input);
+        Task<Array> GetEnquiryReportColumn();
+        Task<Array> GetQuotationReportColumn();
+        Task<Array> GetCompanyReportColumn();
+        Task<Array> GetContactReportColumn();
     }
 }
