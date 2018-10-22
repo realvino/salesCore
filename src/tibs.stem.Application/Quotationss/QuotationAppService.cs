@@ -108,7 +108,7 @@ namespace tibs.stem.Quotationss
         {
             using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
             {
-                var query = _QuotationRepository.GetAll()
+                var query = _QuotationRepository.GetAll().Where(p => p.Revised != true)
                   .WhereIf(
                   !input.Filter.IsNullOrEmpty(),
                   p => p.SubjectName.Contains(input.Filter) ||
@@ -126,10 +126,11 @@ namespace tibs.stem.Quotationss
                                      ProjectRef = a.ProjectRef,
                                      Date = a.Date,
                                      DateString = a.CreationTime.ToString(),
+                                     CreationTime = a.CreationTime,
                                      ClosureDate = a.ClosureDate,
                                      Revised = a.Revised,
                                      Archived = a.Archived,
-                                     Total = a.Total - (a.OverallDiscount / a.ExchangeRate),
+                                     Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                                      SalesOrderNumber = a.SalesOrderNumber,
                                      LostDate = a.LostDate,
                                      OverallDiscount = a.OverallDiscount,
@@ -173,7 +174,7 @@ namespace tibs.stem.Quotationss
                                  });
                 var quotationCount = await quotation.CountAsync();
                 var quotationlist = await quotation
-                    .OrderBy(input.Sorting)
+                    .OrderByDescending(p => p.CreationTime)
                     .PageBy(input)
                     .ToListAsync();
 
@@ -220,10 +221,10 @@ namespace tibs.stem.Quotationss
                         ProjectRef = a.ProjectRef,
                         Date = a.Date,
                         ClosureDate = a.ClosureDate,
-                        Revised = a.Revised,
+                        Revised = a.StatusId > 0 ? a.Status.Revised : false,
                         Archived = a.Archived,
                         Total = a.Total,
-                        OverAllTotal = Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount),2),
+                        OverAllTotal = Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                         SalesOrderNumber = a.SalesOrderNumber,
                         LostDate = a.LostDate,
                         OverallDiscount = a.OverallDiscount,
@@ -473,11 +474,13 @@ namespace tibs.stem.Quotationss
                            select r).FirstOrDefault();
 
                 var qutmap = qut.MapTo<Quotation>();
+                qutmap.Total = QuotationTotal;
+
                 if (qutmap.Vat == true)
                 {
-                    if(qutmap.OverallDiscount > 0)
+                    if (qutmap.OverallDiscount > 0)
                     {
-                        qutmap.VatAmount = ((qutmap.Total- qutmap.OverallDiscount) * qutmap.VatPercentage) / 100;
+                        qutmap.VatAmount = ((qutmap.Total - qutmap.OverallDiscountinUSD) * qutmap.VatPercentage) / 100;
                     }
                     else
                     {
@@ -840,7 +843,7 @@ namespace tibs.stem.Quotationss
                                      ClosureDate = a.ClosureDate,
                                      Revised = a.Revised,
                                      Archived = a.Archived,
-                                     Total = a.Total - (a.OverallDiscount / a.ExchangeRate),
+                                     Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                                      SalesOrderNumber = a.SalesOrderNumber,
                                      LostDate = a.LostDate,
                                      OverallDiscount = a.OverallDiscount,
@@ -972,7 +975,8 @@ namespace tibs.stem.Quotationss
 
                 if (Quotation.Total > 0)
                 {
-                    decimal? QuotationTotal = Quotation.Total - Quotation.OverallDiscount;
+                    decimal QuotationTotal = Quotation.Vat == true ? Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD + Quotation.VatAmount)), 2) : Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD)), 2);
+
                     if (ScheduledPay <= QuotationTotal)
                     {
                         await _PaymentScheduleRepository.InsertAsync(Paymentschedule);
@@ -999,7 +1003,7 @@ namespace tibs.stem.Quotationss
                 }
 
                 var Quotation = _QuotationRepository.GetAll().Where(p => p.Id == input.QuotationId).FirstOrDefault();
-                decimal QuotationTotal = Quotation.Total - Quotation.OverallDiscount;
+                decimal QuotationTotal = Quotation.Vat == true ? Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD + Quotation.VatAmount)), 2) : Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD)), 2);
 
                 if (ScheduledPay <= QuotationTotal)
                 {
@@ -1094,7 +1098,7 @@ namespace tibs.stem.Quotationss
                     var PayCollection = input.MapTo<PaymentCollection>();
 
                     var Quotation = _QuotationRepository.GetAll().Where(p => p.Id == input.QuotationId).FirstOrDefault();
-                    decimal QuotationTotal = Quotation.Total - Quotation.OverallDiscount;
+                    decimal QuotationTotal = Quotation.Vat == true ? Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD + Quotation.VatAmount)), 2) : Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD)), 2);
 
                     decimal DueAmount = (from p in _PaymentCollectionRepository.GetAll() where p.QuotationId == input.QuotationId && p.Received == true select p.Amount).Sum();
 
@@ -1142,7 +1146,7 @@ namespace tibs.stem.Quotationss
                     ObjectMapper.Map(input, UpdatePayCollection);
 
                     var Quotation = _QuotationRepository.GetAll().Where(p => p.Id == input.QuotationId).FirstOrDefault();
-                    decimal QuotationTotal = Quotation.Total - Quotation.OverallDiscount;
+                    decimal QuotationTotal = Quotation.Vat == true ? Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD + Quotation.VatAmount)), 2) : Math.Round((Quotation.ExchangeRate * (Quotation.Total - Quotation.OverallDiscountinUSD)), 2);
 
                     decimal DueAmount = (from p in _PaymentCollectionRepository.GetAll() where p.QuotationId == input.QuotationId && p.Received == true && p.Id != input.Id select p.Amount).Sum();
 
@@ -1209,7 +1213,6 @@ namespace tibs.stem.Quotationss
 
             return data;
         }
-
         public async Task<int> UpdateQuotation(CreateQuotationInput input)
         {
             using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
@@ -1239,7 +1242,7 @@ namespace tibs.stem.Quotationss
 
                 input.ExchangeRate = exchangerate;
                 var val = _QuotationRepository
-                 .GetAll().Where(p => (p.SubjectName == input.SubjectName && p.Revised == false) && p.Id != input.Id).FirstOrDefault();
+                 .GetAll().Where(p => (p.SubjectName == input.SubjectName && p.Revised != true) && p.Id != input.Id).FirstOrDefault();
 
                 var oldquotation = _QuotationRepository.GetAll().AsNoTracking().Where(u => u.Id == input.Id).FirstOrDefault();
 
@@ -1251,7 +1254,7 @@ namespace tibs.stem.Quotationss
                 {
                     if (input.OverallDiscount > 0)
                     {
-                        input.VatAmount = ((input.Total - input.OverallDiscount) * input.VatPercentage) / 100;
+                        input.VatAmount = ((input.Total - input.OverallDiscountinUSD) * input.VatPercentage) / 100;
                     }
                     else
                     {
@@ -1265,6 +1268,7 @@ namespace tibs.stem.Quotationss
                     if (CQuotationStatus.Submitted == true)
                     {
                         input.Submitted = true;
+                        input.Revised = false;
                         input.MileStoneId = CQuotationStatus.MileStoneId != null ? CQuotationStatus.MileStoneId : input.MileStoneId;
                         input.SubmittedDate = DateTime.Now;
                     }
@@ -1283,6 +1287,7 @@ namespace tibs.stem.Quotationss
                     else if (CQuotationStatus.Revised == true)
                     {
                         input.Revised = true;
+                        input.Submitted = false;
                         input.MileStoneId = CQuotationStatus.MileStoneId != null ? CQuotationStatus.MileStoneId : input.MileStoneId;
                     }
                 }
@@ -1309,12 +1314,16 @@ namespace tibs.stem.Quotationss
                     }
                     else
                     {
-                        if (input.Revised == true && oldquotation.Revised == false)
+                        if (input.Revised == true && oldquotation.Revised != true)
                         {
                             input.Id = await QuotationRevision(input.Id);
                         }
                         else
                         {
+                            quotation.CreatorUserId = oldquotation.CreatorUserId;
+                            quotation.CreationTime = oldquotation.CreationTime;
+                            quotation.Date = oldquotation.Date;
+
                             await _QuotationRepository.UpdateAsync(quotation);
                         }
                     }
@@ -1327,6 +1336,111 @@ namespace tibs.stem.Quotationss
                 return input.Id;
             }
         }
+        public void QuotationRevoke(EntityDto input)
+        {
+            using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
+            {
+                ConnectionAppService db = new ConnectionAppService();
+                DataTable ds = new DataTable();
+                using (SqlConnection con = new SqlConnection(db.ConnectionString()))
+                {
+                    SqlCommand sqlComm = new SqlCommand("Sp_RevokeQuotation", con);
+                    sqlComm.Parameters.AddWithValue("@QuotationId", input.Id);
+                    sqlComm.CommandType = CommandType.StoredProcedure;
+                    con.Open();
+                    sqlComm.ExecuteNonQuery();
+                    con.Close();
+                }
+            }
+        }
+        public async Task<PagedResultDto<QuotationList>> GetRevisionQuotation(GetRevisionQuotationInput input)
+        {
+            using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
+            {
+                var QuotationDate = (from q in _QuotationRepository.GetAll() where q.Id == input.QuotationId && q.Revised != true select q.Date).FirstOrDefault();
+                var query = _QuotationRepository.GetAll().Where(r => r.Id == 0);
+                if (QuotationDate != null)
+                {
+                    query = _QuotationRepository.GetAll().Where(r => r.Revised == true && r.Date == QuotationDate)
+                    .WhereIf(
+                    !input.Filter.IsNullOrEmpty(),
+                    p => p.SubjectName.Contains(input.Filter) ||
+                         p.Enquirys.Title.Contains(input.Filter) ||
+                         p.QuotationTitle.Name.Contains(input.Filter) ||
+                         p.Companys.Name.Contains(input.Filter) ||
+                         p.Status.QuotationStatusName.Contains(input.Filter) ||
+                         p.ProposalNumber.Contains(input.Filter)
+                    );
+
+                }
+               
+                var RevQuotation = (from a in query
+                                    select new QuotationList
+                                    {
+                                        Id = a.Id,
+                                        SubjectName = a.SubjectName,
+                                        ProposalNumber = a.ProposalNumber,
+                                        ProjectRef = a.ProjectRef,
+                                        Date = a.Date,
+                                        DateString = a.CreationTime.ToString(),
+                                        ClosureDate = a.ClosureDate,
+                                        Revised = a.Revised,
+                                        Archived = a.Archived,
+                                        Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
+                                        SalesOrderNumber = a.SalesOrderNumber,
+                                        LostDate = a.LostDate,
+                                        OverallDiscount = a.OverallDiscount,
+                                        CustomerPONumber = a.CustomerPONumber,
+                                        ExchangeRate = a.ExchangeRate,
+                                        EnquiryId = a.EnquiryId,
+                                        EnquiryTitle = a.EnquiryId != null ? a.Enquirys.Title : "",
+                                        QuotationTitleId = a.QuotationTitleId,
+                                        QuotationTitleName = a.QuotationTitleId != null ? a.QuotationTitle.Code : "",
+                                        CompanyId = a.CompanyId,
+                                        CompanyName = a.CompanyId != null ? a.Companys.Name : "",
+                                        StatusId = a.StatusId,
+                                        StatusName = a.StatusId != null ? a.Status.QuotationStatusName : "",
+                                        FreightId = a.FreightId,
+                                        FreightName = a.FreightId != null ? a.Freights.FreightName : "",
+                                        PaymentId = a.PaymentId,
+                                        PaymentName = a.PackingId != null ? a.Payment.PaymentName : "",
+                                        PackingId = a.PackingId,
+                                        PackingName = a.PackingId != null ? a.Packings.PackingName : "",
+                                        WarrantyId = a.WarrantyId,
+                                        WarrantyName = a.WarrantyId != null ? a.Warrantys.WarrantyName : "",
+                                        ValidityId = a.ValidityId,
+                                        ValidityName = a.ValidityId != null ? a.Validitys.ValidityName : "",
+                                        DeliveryId = a.DeliveryId,
+                                        DeliveryName = a.DeliveryId != null ? a.Deliverys.DeliveryName : "",
+                                        CurrencyId = a.CurrencyId,
+                                        CurrencyName = a.CurrencyId != null ? a.Currencys.Name : "",
+                                        SalesmanId = a.SalesmanId,
+                                        ReasonId = a.ReasonId,
+                                        Submitted = a.Submitted,
+                                        Won = a.Won,
+                                        Lost = a.Lost,
+                                        WonDate = a.WonDate,
+                                        SubmittedDate = a.SubmittedDate,
+                                        ReasonName = a.ReasonId != null ? a.Reasons.Name : "",
+                                        ContactId = a.ContactId,
+                                        ContactName = a.ContactId != null ? a.Contacts.Name + a.Contacts.LastName : "",
+                                        Vat = a.Vat,
+                                        VatPercentage = a.VatPercentage,
+                                        VatAmount = a.VatAmount
+                                    });
+                var revQuotationCount = await RevQuotation.CountAsync();
+                var revQuotationlist = await RevQuotation
+                    .OrderByDescending(p => p.DateString)
+                    .PageBy(input)
+                    .ToListAsync();
+
+                var revQuotationlistoutput = revQuotationlist.MapTo<List<QuotationList>>();
+
+                return new PagedResultDto<QuotationList>(revQuotationCount, revQuotationlistoutput);
+            }
+        }
+
+
     }
     public class UpdateQuotationTotal
     {

@@ -418,8 +418,7 @@ namespace tibs.stem.Enquiryss
         {
             using (_unitOfWorkManager.Current.SetTenantId(AbpSession.TenantId))
             {
-                var query = _QuotationRepository.GetAll().Where(p => p.EnquiryId == input.EnquiryId);
-
+                var query = _QuotationRepository.GetAll().Where(p => p.EnquiryId == input.EnquiryId && p.Revised != true);
                 var quotation = (from a in query
                                  select new QuotationList
                                  {

@@ -22,4 +22,17 @@ namespace tibs.stem.Quotationss.Dto
     {
         public int QuotationId { get; set; }
     }
+    public class GetRevisionQuotationInput : PagedAndSortedInputDto, IShouldNormalize
+    {
+        public int QuotationId { get; set; }
+        public string Filter { get; set; }
+        public void Normalize()
+        {
+            if (string.IsNullOrEmpty(Sorting))
+            {
+                Sorting = "";
+            }
+        }
+    }
+
 }

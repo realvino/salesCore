@@ -241,6 +241,7 @@ namespace tibs.stem.MultiTenancy
                     CreateQuotationStatusInput QS1 = new CreateQuotationStatusInput();
                     QS1.QuotationStatusCode = "NW";
                     QS1.QuotationStatusName = "New";
+                    QS1.New = true;
                     QS1.TenantId = tenantId;
                     QS1.Id = 0;
                     var QS1s = QS1.MapTo<QuotationStatus>();
@@ -249,6 +250,7 @@ namespace tibs.stem.MultiTenancy
                     CreateQuotationStatusInput QS2 = new CreateQuotationStatusInput();
                     QS2.QuotationStatusCode = "SU";
                     QS2.QuotationStatusName = "Submitted";
+                    QS2.Submitted = true;
                     QS2.TenantId = tenantId;
                     QS2.Id = 0;
                     var QS2s = QS2.MapTo<QuotationStatus>();
@@ -257,6 +259,7 @@ namespace tibs.stem.MultiTenancy
                     CreateQuotationStatusInput QS3 = new CreateQuotationStatusInput();
                     QS3.QuotationStatusCode = "WO";
                     QS3.QuotationStatusName = "Won";
+                    QS3.Won = true;
                     QS3.TenantId = tenantId;
                     QS3.Id = 0;
                     var QS3s = QS3.MapTo<QuotationStatus>();
@@ -265,10 +268,20 @@ namespace tibs.stem.MultiTenancy
                     CreateQuotationStatusInput QS4 = new CreateQuotationStatusInput();
                     QS4.QuotationStatusCode = "LO";
                     QS4.QuotationStatusName = "Lost";
+                    QS4.Lost = true;
                     QS4.TenantId = tenantId;
                     QS4.Id = 0;
                     var QS4s = QS4.MapTo<QuotationStatus>();
                     await _QuotationStatusRepository.InsertAsync(QS4s);
+
+                    CreateQuotationStatusInput QS5 = new CreateQuotationStatusInput();
+                    QS5.QuotationStatusCode = "RE";
+                    QS5.QuotationStatusName = "Revised";
+                    QS5.Revised = true;
+                    QS5.TenantId = tenantId;
+                    QS5.Id = 0;
+                    var QS5s = QS5.MapTo<QuotationStatus>();
+                    await _QuotationStatusRepository.InsertAsync(QS5s);
 
 
                     return new RegisterTenantOutput

@@ -49,6 +49,7 @@ using tibs.stem.Payments;
 using tibs.stem.PaymentSchedules;
 using tibs.stem.QuotationProducts;
 using tibs.stem.PaymentCollections;
+using tibs.stem.Quotations;
 
 namespace tibs.stem.Select2
 {
@@ -91,6 +92,7 @@ namespace tibs.stem.Select2
         private readonly IRepository<QuotationProduct> _QuotationProductRepository;
         private readonly IRepository<PaymentSchedule> _PaymentScheduleRepository;
         private readonly IRepository<PaymentCollection> _PaymentCollectionRepository;
+        private readonly IRepository<Quotation> _QuotationRepository;
 
         public Select2AppService(
             IRepository<PriceLevel> PriceLevelRepository,
@@ -99,6 +101,7 @@ namespace tibs.stem.Select2
             IRepository<PaymentCollection> PaymentCollectionRepository,
             IRepository<Currency> currencyRepository,
             IRepository<InfoType> InfoTypeRepositary,
+            IRepository<Quotation> QuotationRepository,
             IRepository<QuotationProduct> QuotationProductRepository,
             IRepository<PaymentSchedule> PaymentScheduleRepository,
             IRepository<CustomerType> CustomerTypeRepositary,
@@ -136,6 +139,7 @@ namespace tibs.stem.Select2
             _countryRepository = countryRepository;
             _PaymentRepository = PaymentRepository;
             _currencyRepository = currencyRepository;
+            _QuotationRepository = QuotationRepository;
             _InfoTypeRepositary = InfoTypeRepositary;
             _CustomerTypeRepositary = CustomerTypeRepositary;
             _NewCompanyRepository = NewCompanyRepository;
@@ -769,11 +773,10 @@ namespace tibs.stem.Select2
         public async Task<Select6Result> GetDueAmount(NullableIdDto input)
         {
             var output = new Select6Result();
-           
 
-            var Total = (from c in _QuotationProductRepository.GetAll() where c.QuotationId == input.Id select c.EstimatedPriceUSD).Sum();
-            var Collction = (from c in _PaymentCollectionRepository.GetAll() where c.QuotationId == input.Id select c.Amount).Sum();
 
+            var Total = (from c in _QuotationRepository.GetAll() where c.Id == input.Id select c.Vat == true ? Math.Round((c.ExchangeRate * (c.Total - c.OverallDiscountinUSD + c.VatAmount)), 2) : Math.Round((c.ExchangeRate * (c.Total - c.OverallDiscountinUSD)), 2)).FirstOrDefault();
+            var Collction = (from c in _PaymentCollectionRepository.GetAll() where c.QuotationId == input.Id && c.Received == true select c.Amount).Sum();
 
             if (Collction > 0)
             {

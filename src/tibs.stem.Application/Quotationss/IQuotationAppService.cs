@@ -21,10 +21,12 @@ namespace tibs.stem.Quotationss
         Task DeleteQuotationProduct(EntityDto input);
         ListResultDto<QuotationServiceList> GetQuotationService(GetQuotationsInput input);
         Task<GetQuotationService> GetQuotationServiceForEdit(NullableIdDto input);
+        void QuotationRevoke(EntityDto input);
         Task CreateOrUpdateQuotationService(CreateQuotationServiceInput input);
         Task DeleteQuotationService(EntityDto input);
         Task<GetQuotationPreview> GetQuotationPreviewForEdit(NullableIdDto input);
         Task<PagedResultDto<QuotationList>> GetSalesOrder(GetQuotationInput input);
+        Task<PagedResultDto<QuotationList>> GetRevisionQuotation(GetRevisionQuotationInput input);
 
     }
 }

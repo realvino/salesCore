@@ -3463,6 +3463,9 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\src\tibs.stem.Web.Public\o
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\src\tibs.stem.Web.Public\obj\Debug\net461\tibs.stem.Web.Public.csproj.CopyComplete
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\src\tibs.stem.Web.Public\obj\Debug\net461\tibs.stem.Web.Public.exe
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\src\tibs.stem.Web.Public\obj\Debug\net461\tibs.stem.Web.Public.pdb
+E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.Json.dll
+E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Security.Cryptography.Algorithms.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\log4net.config
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Dockerfile
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\tibs.stem.Web.Public.exe.config
@@ -3588,9 +3591,7 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.We
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.Abstractions.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.Binder.dll
-E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.FileExtensions.dll
-E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.Json.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.Configuration.UserSecrets.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.DependencyInjection.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -3667,7 +3668,6 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.We
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Reflection.Metadata.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Runtime.CompilerServices.Unsafe.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Runtime.InteropServices.RuntimeInformation.dll
-E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Security.Cryptography.Algorithms.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Security.Cryptography.Encoding.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Security.Cryptography.Primitives.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Public\bin\Debug\net461\System.Security.Cryptography.X509Certificates.dll

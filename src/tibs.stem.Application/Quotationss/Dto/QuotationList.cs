@@ -67,6 +67,7 @@ namespace tibs.stem.Quotationss.Dto
         public virtual bool Vat { get; set; }
         public virtual decimal VatPercentage { get; set; }
         public virtual decimal VatAmount { get; set; }
+        public DateTime CreationTime { get; internal set; }
     }
 
     [AutoMapFrom(typeof(QuotationProduct))]

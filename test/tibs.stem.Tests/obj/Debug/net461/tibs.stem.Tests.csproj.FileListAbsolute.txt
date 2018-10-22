@@ -2140,6 +2140,7 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\test\tibs.stem.Tests\obj\D
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\test\tibs.stem.Tests\obj\Debug\net461\tibs.stem.Tests.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\test\tibs.stem.Tests\obj\Debug\net461\tibs.stem.Tests.pdb
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\test\tibs.stem.Tests\obj\Debug\net461\tibs.stem.Tests.csprojAssemblyReference.cache
+E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\MimeKit.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\xunit.runner.visualstudio.testadapter.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\xunit.runner.utility.net35.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\xunit.runner.reporters.net452.dll
@@ -2224,7 +2225,6 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.T
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\Microsoft.IdentityModel.Tokens.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\Microsoft.Net.Http.Headers.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\Microsoft.Win32.Primitives.dll
-E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\MimeKit.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\Newtonsoft.Json.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\Nito.AsyncEx.Concurrent.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\test\tibs.stem.Tests\bin\Debug\net461\Nito.AsyncEx.Enlightenment.dll
