@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETFramework,Version=v4.6.1/win7-x86",
-    "signature": "71a20995b26fa7461c7a593d3ebc8d927efb1da9"
+    "signature": "d66519ea34bcd56ab219aa9aae556671ef699b08"
   },
   "compilationOptions": {
     "defines": [
@@ -36,24 +36,8 @@
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.1.1",
           "Owin.Security.AesDataProtectorProvider": "1.1.0",
+          "T4": "2.0.1",
           "tibs.stem.Web.Core": "4.1.0",
-          "Microsoft.CSharp.Reference": "4.0.0.0",
-          "mscorlib": "4.0.0.0",
-          "System.ComponentModel.Composition": "4.0.0.0",
-          "System.ComponentModel.DataAnnotations": "4.0.0.0",
-          "System.Configuration": "4.0.0.0",
-          "System.Core": "4.0.0.0",
-          "System.Data": "4.0.0.0",
-          "System": "4.0.0.0",
-          "System.Drawing": "4.0.0.0",
-          "System.IO.Compression.FileSystem": "4.0.0.0",
-          "System.Net": "4.0.0.0",
-          "System.Numerics": "4.0.0.0",
-          "System.Runtime.Serialization": "4.0.0.0",
-          "System.Security": "4.0.0.0",
-          "System.Transactions": "4.0.0.0",
-          "System.Xml": "4.0.0.0",
-          "System.Xml.Linq": "4.0.0.0",
           "System.Collections.Concurrent.Reference": "0.0.0.0",
           "System.Collections.Reference": "0.0.0.0",
           "System.ComponentModel.Annotations": "0.0.0.0",
@@ -105,95 +89,12 @@
           "System.Threading.Tasks.Parallel.Reference": "0.0.0.0",
           "System.Threading.Timer.Reference": "0.0.0.0",
           "System.Xml.XDocument.Reference": "0.0.0.0",
-          "System.Xml.XmlSerializer": "0.0.0.0"
+          "System.Xml.XmlSerializer": "0.0.0.0",
+          "System.Drawing": "4.0.0.0",
+          "System.Runtime.Serialization": "4.0.0.0"
         },
         "compile": {
           "tibs.stem.Web.Host.exe": {}
-        }
-      },
-      "Microsoft.CSharp.Reference/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/Microsoft.CSharp.dll": {}
-        }
-      },
-      "mscorlib/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/mscorlib.dll": {}
-        }
-      },
-      "System.ComponentModel.Composition/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.ComponentModel.Composition.dll": {}
-        }
-      },
-      "System.ComponentModel.DataAnnotations/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.ComponentModel.DataAnnotations.dll": {}
-        }
-      },
-      "System.Configuration/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Configuration.dll": {}
-        }
-      },
-      "System.Core/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Core.dll": {}
-        }
-      },
-      "System.Data/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Data.dll": {}
-        }
-      },
-      "System/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.dll": {}
-        }
-      },
-      "System.Drawing/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Drawing.dll": {}
-        }
-      },
-      "System.IO.Compression.FileSystem/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.IO.Compression.FileSystem.dll": {}
-        }
-      },
-      "System.Net/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Net.dll": {}
-        }
-      },
-      "System.Numerics/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Numerics.dll": {}
-        }
-      },
-      "System.Runtime.Serialization/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Runtime.Serialization.dll": {}
-        }
-      },
-      "System.Security/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Security.dll": {}
-        }
-      },
-      "System.Transactions/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Transactions.dll": {}
-        }
-      },
-      "System.Xml/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Xml.dll": {}
-        }
-      },
-      "System.Xml.Linq/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.6.1/System.Xml.Linq.dll": {}
         }
       },
       "System.Collections.Concurrent.Reference/0.0.0.0": {
@@ -454,6 +355,16 @@
       "System.Xml.XmlSerializer/0.0.0.0": {
         "compile": {
           ".NETFramework/v4.6.1/Facades/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "System.Drawing/4.0.0.0": {
+        "compile": {
+          "System.Drawing.dll": {}
+        }
+      },
+      "System.Runtime.Serialization/4.0.0.0": {
+        "compile": {
+          "System.Runtime.Serialization.dll": {}
         }
       },
       "Abp/2.3.0": {
@@ -2380,9 +2291,11 @@
           "System.Xml.XPath": "4.0.1"
         }
       },
+      "T4/2.0.1": {},
       "tibs.stem.Application/4.1.0": {
         "dependencies": {
           "EPPlus.Core": "1.5.1",
+          "T4": "2.0.1",
           "tibs.stem.Core": "4.1.0",
           "tibs.stem.EntityFrameworkCore": "4.1.0"
         },
@@ -2399,7 +2312,8 @@
           "Castle.Windsor.MsDependencyInjection": "2.1.1",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.2",
           "Microsoft.Extensions.Configuration.Json": "1.1.2",
-          "Microsoft.Extensions.Configuration.UserSecrets": "1.1.2"
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.1.2",
+          "T4": "2.0.1"
         },
         "compile": {
           "tibs.stem.Core.dll": {}
@@ -2410,6 +2324,7 @@
           "Microsoft.EntityFrameworkCore.Design": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
+          "T4": "2.0.1",
           "tibs.stem.Core": "4.1.0"
         },
         "compile": {
@@ -2436,6 +2351,7 @@
           "Swashbuckle.AspNetCore": "1.0.0",
           "System.Net.Http": "4.3.2",
           "System.ValueTuple": "4.3.1",
+          "T4": "2.0.1",
           "tibs.stem.Application": "4.1.0",
           "tibs.stem.EntityFrameworkCore": "4.1.0"
         },
@@ -2459,24 +2375,8 @@
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.1.1",
           "Owin.Security.AesDataProtectorProvider": "1.1.0",
+          "T4": "2.0.1",
           "tibs.stem.Web.Core": "4.1.0",
-          "Microsoft.CSharp.Reference": "4.0.0.0",
-          "mscorlib": "4.0.0.0",
-          "System.ComponentModel.Composition": "4.0.0.0",
-          "System.ComponentModel.DataAnnotations": "4.0.0.0",
-          "System.Configuration": "4.0.0.0",
-          "System.Core": "4.0.0.0",
-          "System.Data": "4.0.0.0",
-          "System": "4.0.0.0",
-          "System.Drawing": "4.0.0.0",
-          "System.IO.Compression.FileSystem": "4.0.0.0",
-          "System.Net": "4.0.0.0",
-          "System.Numerics": "4.0.0.0",
-          "System.Runtime.Serialization": "4.0.0.0",
-          "System.Security": "4.0.0.0",
-          "System.Transactions": "4.0.0.0",
-          "System.Xml": "4.0.0.0",
-          "System.Xml.Linq": "4.0.0.0",
           "System.Collections.Concurrent.Reference": "0.0.0.0",
           "System.Collections.Reference": "0.0.0.0",
           "System.ComponentModel.Annotations": "0.0.0.0",
@@ -2528,7 +2428,9 @@
           "System.Threading.Tasks.Parallel.Reference": "0.0.0.0",
           "System.Threading.Timer.Reference": "0.0.0.0",
           "System.Xml.XDocument.Reference": "0.0.0.0",
-          "System.Xml.XmlSerializer": "0.0.0.0"
+          "System.Xml.XmlSerializer": "0.0.0.0",
+          "System.Drawing": "4.0.0.0",
+          "System.Runtime.Serialization": "4.0.0.0"
         },
         "runtime": {
           "tibs.stem.Web.Host.exe": {}
@@ -4496,9 +4398,11 @@
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "T4/2.0.1": {},
       "tibs.stem.Application/4.1.0": {
         "dependencies": {
           "EPPlus.Core": "1.5.1",
+          "T4": "2.0.1",
           "tibs.stem.Core": "4.1.0",
           "tibs.stem.EntityFrameworkCore": "4.1.0"
         },
@@ -4515,7 +4419,8 @@
           "Castle.Windsor.MsDependencyInjection": "2.1.1",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.2",
           "Microsoft.Extensions.Configuration.Json": "1.1.2",
-          "Microsoft.Extensions.Configuration.UserSecrets": "1.1.2"
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.1.2",
+          "T4": "2.0.1"
         },
         "runtime": {
           "tibs.stem.Core.dll": {}
@@ -4526,6 +4431,7 @@
           "Microsoft.EntityFrameworkCore.Design": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
+          "T4": "2.0.1",
           "tibs.stem.Core": "4.1.0"
         },
         "runtime": {
@@ -4552,6 +4458,7 @@
           "Swashbuckle.AspNetCore": "1.0.0",
           "System.Net.Http": "4.3.2",
           "System.ValueTuple": "4.3.1",
+          "T4": "2.0.1",
           "tibs.stem.Application": "4.1.0",
           "tibs.stem.EntityFrameworkCore": "4.1.0"
         },
@@ -6247,6 +6154,13 @@
       "path": "system.xml.xpath.xdocument/4.0.1",
       "hashPath": "system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
     },
+    "T4/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M2ga3EBYkjX9WVvpKLHjwaaV09YpffHy2MSUhKDFUBLcHKGufwVQeCpgF6Af5nCb2U9bnCSUwAs1SndT8zMaJg==",
+      "path": "t4/2.0.1",
+      "hashPath": "t4.2.0.1.nupkg.sha512"
+    },
     "tibs.stem.Application/4.1.0": {
       "type": "project",
       "serviceable": false,
@@ -6264,91 +6178,6 @@
     },
     "tibs.stem.Web.Core/4.1.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.CSharp.Reference/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "mscorlib/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.ComponentModel.Composition/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.ComponentModel.DataAnnotations/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Configuration/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Core/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Data/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Drawing/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.IO.Compression.FileSystem/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Net/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Numerics/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Runtime.Serialization/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Security/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Transactions/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Xml/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Xml.Linq/4.0.0.0": {
-      "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
@@ -6608,6 +6437,16 @@
       "sha512": ""
     },
     "System.Xml.XmlSerializer/0.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Drawing/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

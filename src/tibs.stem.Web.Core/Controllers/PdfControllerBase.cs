@@ -238,16 +238,18 @@ namespace tibs.stem.Web.Controllers
                         .AddJsonFile("appsettings.json");
 
             Configuration = rootpath.Build();
+            var root = Configuration["App:ServerRootAddress"];
+
             var TenantLogoImage = (from r in _stemDbContext.Tenants where r.Id == quotation.TenantId select r.LogoId).FirstOrDefault();
             if (TenantLogoImage != null)
             {
-                var root = Configuration["App:ServerRootAddress"];
-                body = body.Replace("{Image_Url}", root + "/Common/Logo/LogoImage_" + quotation.TenantId + ".jpg");
+                body = body.Replace("{Image_Url}", root + "Common/Logo/LogoImage_" + quotation.TenantId + ".jpg");
             }
             else
             {
                 body = body.Replace("{Image_Url}", "");
             }
+            body = body.Replace("{url}", root);
 
 
             string QuotationPath = _hostingEnvironment.WebRootPath + "\\Common\\QuotationPDF\\";

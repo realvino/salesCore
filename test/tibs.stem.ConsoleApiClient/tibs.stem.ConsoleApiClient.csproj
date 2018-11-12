@@ -6,6 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Abp.Web.Common" Version="2.3.0" />
     <PackageReference Include="IdentityModel" Version="2.10.0" />
+    <PackageReference Include="T4" Version="2.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\tibs.stem.Application\tibs.stem.Application.csproj" />

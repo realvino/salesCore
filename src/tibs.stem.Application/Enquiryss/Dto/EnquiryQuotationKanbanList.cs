@@ -78,6 +78,7 @@ namespace tibs.stem.Enquiryss.Dto
         public string MilestoneName { get; set; }
         public decimal Total { get; set; }
         public EnquiryQuotationKanbanList[] EnquiryQuotationKanban { get; set; }
+        public bool EndQuotation { get; internal set; }
     }
     public class EnquiryQuotationKanbanArrayOld
     {

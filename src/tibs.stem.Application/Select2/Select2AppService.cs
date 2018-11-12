@@ -846,7 +846,40 @@ namespace tibs.stem.Select2
                 return sr;
             }
         }
+        public async Task<Select3Result> GetQuotationStatus()
+        {
+            using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
+            {
+                Select3Result sr = new Select3Result();
+                var statusDtos = new List<datadto3>();
+                var submittedStatus = _QuotationStatusRepository.GetAll().Where(p => p.Submitted == true).FirstOrDefault();
+                if (submittedStatus != null)
+                {
+                    statusDtos.Add(new datadto3 { Id = submittedStatus.Id, Name = submittedStatus.QuotationStatusName, Code = "Submitted" });
+                }
 
+                var revisedStatus = _QuotationStatusRepository.GetAll().Where(p => p.Revised == true).FirstOrDefault();
+                if (revisedStatus != null)
+                {
+                    statusDtos.Add(new datadto3 { Id = revisedStatus.Id, Name = revisedStatus.QuotationStatusName, Code = "Revised" });
+                }
+
+                var wonStatus = _QuotationStatusRepository.GetAll().Where(p => p.Won == true).FirstOrDefault();
+                if (wonStatus != null)
+                {
+                    statusDtos.Add(new datadto3 { Id = wonStatus.Id, Name = wonStatus.QuotationStatusName, Code = "Won" });
+                }
+
+                var lostStatus = _QuotationStatusRepository.GetAll().Where(p => p.Lost == true).FirstOrDefault();
+                if (lostStatus != null)
+                {
+                    statusDtos.Add(new datadto3 { Id = lostStatus.Id, Name = lostStatus.QuotationStatusName, Code = "Lost" });
+                }
+
+                sr.select3data = statusDtos.ToArray();
+                return sr;
+            }
+        }
 
     }
 

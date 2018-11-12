@@ -13,6 +13,8 @@ namespace tibs.stem.Milestones.Dto
         public virtual int MilestoneStatusId { get; set; }
         public virtual string StatusName { get; set; }
         public virtual int Id { get; set; }
+        public virtual bool EndOfQuotation { get; set; }
+
 
     }
 }

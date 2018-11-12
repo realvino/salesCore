@@ -148,6 +148,16 @@ namespace tibs.stem.MileStones
 
                 var val = _MilestoneRepository
                     .GetAll().Where(p => p.Name == input.Name || p.Code == input.Code).FirstOrDefault();
+
+                if (input.EndOfQuotation == true && input.IsQuotation == true)
+                {
+                    val = _MilestoneRepository.GetAll().Where(p => (p.Name == input.Name || p.Code == input.Code || p.EndOfQuotation == true) && p.IsQuotation == true).FirstOrDefault();
+                }
+                else if (input.EndOfQuotation == true && input.IsQuotation == false)
+                {
+                    throw new UserFriendlyException("Ooops!", "Invalid Milestone");
+                }
+
                 if (val == null)
                 {
                     await _MilestoneRepository.InsertAsync(milestone);
@@ -166,6 +176,16 @@ namespace tibs.stem.MileStones
                 var mileStone = input.MapTo<MileStone>();
                 var val = _MilestoneRepository
                   .GetAll().Where(p => (p.Name == input.Name || p.Code == input.Code) && p.Id != input.Id).FirstOrDefault();
+
+                if (input.EndOfQuotation == true && input.IsQuotation == true)
+                {
+                    val = _MilestoneRepository.GetAll().Where(p => (p.Name == input.Name || p.Code == input.Code || p.EndOfQuotation == true) && p.IsQuotation == true && p.Id != input.Id).FirstOrDefault();
+                }
+                else if (input.EndOfQuotation == true && input.IsQuotation == false)
+                {
+                    throw new UserFriendlyException("Ooops!", "Invalid Update");
+                }
+
                 if (val == null)
                 {
                     await _MilestoneRepository.UpdateAsync(mileStone);

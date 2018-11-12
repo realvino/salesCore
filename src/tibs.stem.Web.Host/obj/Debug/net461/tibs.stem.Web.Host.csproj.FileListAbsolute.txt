@@ -3507,6 +3507,8 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.We
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.deps.json
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.exe
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.pdb
+E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\refs\System.Drawing.dll
+E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\refs\System.Runtime.Serialization.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\libuv.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.dll
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.AspNetCore.dll
@@ -3736,5 +3738,469 @@ E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.We
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.csproj.CopyComplete
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.exe
 E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.pdb
-E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\refs\System.Drawing.dll
-E:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\refs\System.Runtime.Serialization.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\log4net.config
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Dockerfile
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.exe.config
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.deps.json
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.runtimeconfig.json
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.runtimeconfig.dev.json
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.exe
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.pdb
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\libuv.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.AspNetCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.AutoMapper.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Castle.Log4Net.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.EntityFramework.Common.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.EntityFrameworkCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.HangFire.AspNetCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.MailKit.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Owin.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.RedisCache.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Web.Common.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Web.SignalR.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Zero.Common.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Zero.Ldap.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.EntityFrameworkCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.IdentityServer4.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.IdentityServer4.EntityFrameworkCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\AutoMapper.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\BouncyCastle.Crypto.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Facilities.Logging.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.LoggingFacility.MsLogging.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Windsor.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Windsor.MsDependencyInjection.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\EPPlus.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.AspNetCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.SqlServer.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityModel.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityModel.AspNetCore.OAuth2Introspection.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityModel.AspNetCore.ScopeValidation.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityServer4.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityServer4.AccessTokenValidation.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityServer4.AspNetIdentity.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\JetBrains.Annotations.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\log4net.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\MailKit.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Web.Cors.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNet.SignalR.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Antiforgery.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.Cookies.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.Facebook.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.Google.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.OAuth.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authorization.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Cors.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.DataProtection.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Diagnostics.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Hosting.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Hosting.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Html.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.Extensions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.Features.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.HttpOverrides.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Identity.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.JsonPatch.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Localization.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Cors.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Localization.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Razor.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Owin.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Razor.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Razor.Runtime.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Routing.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Routing.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Server.IISIntegration.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.StaticFiles.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.WebUtilities.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Threading.Tasks.Extensions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Threading.Tasks.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.CSharp.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.Workspaces.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.AttributedModel.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.Convention.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.Hosting.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.Runtime.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.TypedParts.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.DotNet.PlatformAbstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.Design.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.Relational.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.Relational.Design.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Caching.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Caching.Memory.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.CommandLineUtils.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.Binder.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.Json.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.UserSecrets.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.DependencyInjection.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.DependencyModel.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Composite.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Physical.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Localization.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Localization.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Logging.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Logging.Abstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.ObjectPool.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Options.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.PlatformAbstractions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Primitives.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.WebEncoders.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Logging.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Protocols.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Tokens.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Net.Http.Headers.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.Cors.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.FileSystems.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.Security.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.StaticFiles.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.BrowserLink.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\dotnet-aspnet-codegenerator-design.exe
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Win32.Primitives.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\MimeKit.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Newtonsoft.Json.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Nito.AsyncEx.Concurrent.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Nito.AsyncEx.Enlightenment.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Nito.AsyncEx.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\NReco.PdfGenerator.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\NuGet.Frameworks.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Owin.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Owin.Security.AesDataProtectorProvider.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\PaulMiami.AspNetCore.Mvc.Recaptcha.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Remotion.Linq.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\StackExchange.Redis.StrongName.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.Swagger.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.AppContext.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Buffers.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Collections.Immutable.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.ComponentModel.Primitives.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.ComponentModel.TypeConverter.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Console.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Diagnostics.DiagnosticSource.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Diagnostics.FileVersionInfo.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Diagnostics.StackTrace.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Globalization.Calendars.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IdentityModel.Tokens.Jwt.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Interactive.Async.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.Compression.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.Compression.ZipFile.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.FileSystem.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.FileSystem.Primitives.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Linq.Dynamic.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Net.Http.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Net.Sockets.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Numerics.Vectors.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Reflection.Metadata.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Runtime.CompilerServices.Unsafe.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.Algorithms.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.Encoding.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.Primitives.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.X509Certificates.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Text.Encoding.CodePages.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Text.Encodings.Web.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Threading.Tasks.Extensions.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Threading.Thread.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.ValueTuple.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.ReaderWriter.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.XmlDocument.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.XPath.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.XPath.XDocument.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.Core.resources.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Application.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.EntityFrameworkCore.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Core.dll
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Core.pdb
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Application.pdb
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Core.pdb
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.EntityFrameworkCore.pdb
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.EntityFrameworkCore.dll.config
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.csprojResolveAssemblyReference.cache
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.csproj.tibs.stem.Web.Host.exe.config
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.AssemblyInfo.cs
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.exe
+F:\SalesCastle\SalesCastle Jan 05\SC-Core 2\salesCore\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.pdb
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\log4net.config
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Dockerfile
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.exe.config
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.deps.json
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.runtimeconfig.json
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.runtimeconfig.dev.json
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.exe
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Host.pdb
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\libuv.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.AspNetCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.AutoMapper.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Castle.Log4Net.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.EntityFramework.Common.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.EntityFrameworkCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.HangFire.AspNetCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.MailKit.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Owin.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.RedisCache.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Web.Common.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Web.SignalR.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Zero.Common.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.Zero.Ldap.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.EntityFrameworkCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.IdentityServer4.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Abp.ZeroCore.IdentityServer4.EntityFrameworkCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\AutoMapper.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\BouncyCastle.Crypto.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Facilities.Logging.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.LoggingFacility.MsLogging.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Windsor.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Castle.Windsor.MsDependencyInjection.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\EPPlus.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.AspNetCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.SqlServer.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityModel.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityModel.AspNetCore.OAuth2Introspection.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityModel.AspNetCore.ScopeValidation.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityServer4.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityServer4.AccessTokenValidation.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\IdentityServer4.AspNetIdentity.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\JetBrains.Annotations.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\log4net.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\MailKit.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Web.Cors.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNet.SignalR.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Antiforgery.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.Cookies.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.Facebook.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.Google.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authentication.OAuth.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Authorization.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Cors.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.DataProtection.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Diagnostics.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Hosting.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Hosting.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Html.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.Extensions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Http.Features.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.HttpOverrides.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Identity.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.JsonPatch.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Localization.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Cors.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Localization.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Razor.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Owin.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Razor.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Razor.Runtime.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Routing.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Routing.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Server.IISIntegration.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.StaticFiles.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.AspNetCore.WebUtilities.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Threading.Tasks.Extensions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Threading.Tasks.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.CSharp.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.Workspaces.Desktop.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.CodeAnalysis.Workspaces.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.AttributedModel.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.Convention.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.Hosting.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.Runtime.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Composition.TypedParts.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.DotNet.PlatformAbstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.Design.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.Relational.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.Relational.Design.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Caching.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Caching.Memory.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.CommandLineUtils.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.Binder.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.Json.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Configuration.UserSecrets.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.DependencyInjection.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.DependencyModel.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Composite.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileProviders.Physical.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Localization.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Localization.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Logging.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Logging.Abstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.ObjectPool.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Options.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.PlatformAbstractions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.Primitives.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Extensions.WebEncoders.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Logging.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Protocols.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.IdentityModel.Tokens.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Net.Http.Headers.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.Cors.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.FileSystems.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.Security.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Owin.StaticFiles.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.BrowserLink.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\dotnet-aspnet-codegenerator-design.exe
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Microsoft.Win32.Primitives.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\MimeKit.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Newtonsoft.Json.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Nito.AsyncEx.Concurrent.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Nito.AsyncEx.Enlightenment.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Nito.AsyncEx.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\NReco.PdfGenerator.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\NuGet.Frameworks.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Owin.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Owin.Security.AesDataProtectorProvider.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\PaulMiami.AspNetCore.Mvc.Recaptcha.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Remotion.Linq.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\StackExchange.Redis.StrongName.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.Swagger.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.AppContext.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Buffers.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Collections.Immutable.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.ComponentModel.Primitives.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.ComponentModel.TypeConverter.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Console.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Diagnostics.DiagnosticSource.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Diagnostics.FileVersionInfo.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Diagnostics.StackTrace.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Globalization.Calendars.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IdentityModel.Tokens.Jwt.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Interactive.Async.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.Compression.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.Compression.ZipFile.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.FileSystem.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.IO.FileSystem.Primitives.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Linq.Dynamic.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Net.Http.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Net.Sockets.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Numerics.Vectors.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Reflection.Metadata.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Runtime.CompilerServices.Unsafe.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.Algorithms.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.Encoding.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.Primitives.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Security.Cryptography.X509Certificates.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Text.Encoding.CodePages.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Text.Encodings.Web.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Threading.Tasks.Extensions.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Threading.Thread.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.ValueTuple.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.ReaderWriter.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.XmlDocument.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.XPath.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\System.Xml.XPath.XDocument.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\Hangfire.Core.resources.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Application.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.EntityFrameworkCore.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Core.dll
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Web.Core.pdb
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Application.pdb
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.Core.pdb
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.EntityFrameworkCore.pdb
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\bin\Debug\net461\tibs.stem.EntityFrameworkCore.dll.config
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.csprojResolveAssemblyReference.cache
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.csproj.tibs.stem.Web.Host.exe.config
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.AssemblyInfo.cs
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.exe
+F:\SalesCastle\Main\Core\salesCore\src\tibs.stem.Web.Host\obj\Debug\net461\tibs.stem.Web.Host.pdb

@@ -1554,6 +1554,8 @@ namespace tibs.stem.Migrations
 
                     b.Property<DateTime?>("DeletionTime");
 
+                    b.Property<bool>("EndOfQuotation");
+
                     b.Property<bool>("IsDeleted");
 
                     b.Property<bool>("IsQuotation");

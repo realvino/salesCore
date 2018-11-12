@@ -14,6 +14,8 @@ namespace tibs.stem.MileStones
         public virtual string Name { get; set; }
         public int TenantId { get; set; }
         public virtual bool IsQuotation { get; set; }
+        public virtual bool EndOfQuotation { get; set; }
+
 
     }
 }

@@ -1,9 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Vinoth\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Vinoth\\.nuget\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "C:\\Users\\vinor\\.nuget\\packages"
     ]
   }
 }

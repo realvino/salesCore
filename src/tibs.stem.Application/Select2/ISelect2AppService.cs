@@ -45,8 +45,7 @@ namespace tibs.stem.Select2
         Task<Select2Result> GetCompetitor();
         Task<Select2Result> GetDashboardSelect();
         Task<Select2Result> GetQuotationMilestone();
-        //Task<Select2Result> GetReports();
-        Select2Result GetEnqMilestone();
+        Task<Select3Result> GetQuotationStatus();
 
     }
 }

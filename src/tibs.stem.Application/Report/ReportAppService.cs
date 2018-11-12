@@ -58,7 +58,7 @@ namespace tibs.stem.Report
             using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
             {
                 int Submitted = (from r in _QuotationStatusRepository.GetAll().Where(p => p.Submitted == true) select r.Id).FirstOrDefault();
-                var query = _QuotationRepository.GetAll().Where(p=> p.StatusId == Submitted && p.Submitted == true)
+                var query = _QuotationRepository.GetAll().Where(p=> p.StatusId == Submitted && p.Submitted == true && p.Revised != true)
                   .WhereIf(
                   !input.Filter.IsNullOrEmpty(),
                   p => p.SubjectName.Contains(input.Filter) ||
@@ -75,7 +75,7 @@ namespace tibs.stem.Report
                                      ProposalNumber = a.ProposalNumber,
                                      ProjectRef = a.ProjectRef,
                                      CreationTime = a.CreationTime.ToString(),
-                                     Total = a.Vat == true ? (a.VatAmount + Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount), 2)) : Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount), 2),
+                                     Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                                      SalesOrderNumber = a.SalesOrderNumber,
                                      LostDate = a.LostDate,
                                      CustomerPONumber = a.CustomerPONumber,
@@ -156,7 +156,7 @@ namespace tibs.stem.Report
                                      ProposalNumber = a.ProposalNumber,
                                      ProjectRef = a.ProjectRef,
                                      CreationTime = a.CreationTime.ToString(),
-                                     Total = a.Vat == true ? (a.VatAmount + Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount), 2)) : Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount), 2),
+                                     Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                                      SalesOrderNumber = a.SalesOrderNumber,
                                      LostDate = a.LostDate,
                                      CustomerPONumber = a.CustomerPONumber,
@@ -238,7 +238,7 @@ namespace tibs.stem.Report
                                      ProposalNumber = a.ProposalNumber,
                                      ProjectRef = a.ProjectRef,
                                      CreationTime = a.CreationTime.ToString(),
-                                     Total = a.Vat == true ? (a.VatAmount + Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount), 2)) : Math.Round(((a.Total * a.ExchangeRate) - a.OverallDiscount), 2),
+                                     Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                                      SalesOrderNumber = a.SalesOrderNumber,
                                      LostDate = a.LostDate,
                                      CustomerPONumber = a.CustomerPONumber,

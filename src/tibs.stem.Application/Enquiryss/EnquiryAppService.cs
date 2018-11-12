@@ -430,7 +430,7 @@ namespace tibs.stem.Enquiryss
                                      ClosureDate = a.ClosureDate,
                                      Revised = a.Revised,
                                      Archived = a.Archived,
-                                     Total = a.Total,
+                                     Total = a.Vat == true ? Math.Round((a.ExchangeRate * (a.VatAmount + a.Total - a.OverallDiscountinUSD)), 2) : Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                                      SalesOrderNumber = a.SalesOrderNumber,
                                      LostDate = a.LostDate,
                                      OverallDiscount = a.OverallDiscount,
@@ -667,6 +667,7 @@ namespace tibs.stem.Enquiryss
                     {
                         Flag = false,
                         MilestoneName = newsts.Name,
+                        EndQuotation = false,
                         Total = (from r in NewStatuss where r.MileStoneId == newsts.Id && r.QuotationId > 0 select r.Total).Sum(),
                         EnquiryQuotationKanban = (from r in NewStatuss where r.MileStoneId == newsts.Id && r.QuotationId == 0 select r).OrderByDescending(p => p.CreationTime).ToArray()
                     });
@@ -677,6 +678,7 @@ namespace tibs.stem.Enquiryss
                     SubListout.Add(new EnquiryQuotationKanbanArray
                     {
                         Flag = true,
+                        EndQuotation = Qnewsts.EndOfQuotation,
                         MilestoneName = Qnewsts.Name,
                         Total = (from r in NewStatuss where r.MileStoneId == Qnewsts.Id && r.QuotationId > 0 select r.Total).Sum(),
                         EnquiryQuotationKanban = (from r in NewStatuss where r.MileStoneId == Qnewsts.Id && r.QuotationId > 0 select r).OrderByDescending(p => p.CreationTime).ToArray()

@@ -12,6 +12,7 @@ namespace tibs.stem.Quotationss.Dto
     public class QuotationList
     {
         public virtual int Id { get; set; }
+        public virtual bool IsQuotationRevised { get; set; }
         public virtual string SubjectName { get; set; }
         public virtual string ProposalNumber { get; set; }
         public virtual string ProjectRef { get; set; }

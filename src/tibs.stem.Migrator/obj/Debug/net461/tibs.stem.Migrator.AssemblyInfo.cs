@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Package Description")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("4.1.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("4.1.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tibs.stem.Migrator")]

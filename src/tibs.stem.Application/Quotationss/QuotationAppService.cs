@@ -221,9 +221,10 @@ namespace tibs.stem.Quotationss
                         ProjectRef = a.ProjectRef,
                         Date = a.Date,
                         ClosureDate = a.ClosureDate,
-                        Revised = a.StatusId > 0 ? a.Status.Revised : false,
+                        Revised = a.Revised,
                         Archived = a.Archived,
                         Total = a.Total,
+                        IsQuotationRevised = a.StatusId > 0 ? a.Status.Revised : false,
                         OverAllTotal = Math.Round((a.ExchangeRate * (a.Total - a.OverallDiscountinUSD)), 2),
                         SalesOrderNumber = a.SalesOrderNumber,
                         LostDate = a.LostDate,
@@ -345,8 +346,8 @@ namespace tibs.stem.Quotationss
                     input.ExchangeRate = exchangerate;
 
                     var date = DateTime.Now.ToString("yyyyMMdd", System.Globalization.CultureInfo.InvariantCulture);
-                    
-                    input.StatusId = _QuotationStatusRepository.GetAll().Where(o => o.QuotationStatusName == "New").Select(o => o.Id).DefaultIfEmpty().First();
+
+                    input.StatusId = _QuotationStatusRepository.GetAll().Where(o => o.New == true).Select(o => o.Id).DefaultIfEmpty().First();
                     input.ValidityId = _ValidityRepository.GetAll().Select(o => o.Id).DefaultIfEmpty().First();
                     input.WarrantyId = _WarrantyRepository.GetAll().Select(o => o.Id).DefaultIfEmpty().First();
                     input.PackingId = _PackingRepository.GetAll().Select(o => o.Id).DefaultIfEmpty().First();
@@ -819,7 +820,8 @@ namespace tibs.stem.Quotationss
         {
             using (_unitOfWorkManager.Current.SetTenantId(_session.TenantId))
             {
-                var query = _QuotationRepository.GetAll().Where(p => p.Status.QuotationStatusName == "Won")
+                var WonStatusId = (from p in _QuotationStatusRepository.GetAll() where p.Won == true select p.Id).FirstOrDefault();
+                var query = _QuotationRepository.GetAll().Where(p => p.StatusId == WonStatusId && p.Won == true)
                   .WhereIf(
                   !input.Filter.IsNullOrEmpty(),
                   p => p.Id.ToString().Contains(input.Filter) ||
@@ -1307,7 +1309,7 @@ namespace tibs.stem.Quotationss
                 if (val == null)
                 {
 
-                    int Sid = _QuotationStatusRepository.GetAll().Where(o => o.QuotationStatusName == "New").Select(o => o.Id).DefaultIfEmpty().First();
+                    int Sid = _QuotationStatusRepository.GetAll().Where(o => o.New == true).Select(o => o.Id).DefaultIfEmpty().First();
                     if (input.StatusId != Sid && input.Total < 1)
                     {
                         throw new UserFriendlyException("Ooops!", "Invalid Update...");

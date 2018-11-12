@@ -14,14 +14,11 @@ namespace tibs.stem.MileStones.Dto
     public class CreateMileInputDto
     {
         public string Code { get; set; }
-
         public string Name { get; set; }
-
         public int TenantId { get; set; }
-
         public int Id { get; set; }
         public virtual bool IsQuotation { get; set; }
-
+        public virtual bool EndOfQuotation { get; set; }
 
     }
 }
